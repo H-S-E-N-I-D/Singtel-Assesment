@@ -5,6 +5,9 @@ import com.singtel.devtest.util.Habitat;
 public class Parrot extends FlyableBird {
     private Habitat habitat;
 
+    public Parrot() {
+        habitat = Habitat.DEFAULT;
+    }
 
     public Parrot(Habitat habitat) {
         this.habitat = habitat;

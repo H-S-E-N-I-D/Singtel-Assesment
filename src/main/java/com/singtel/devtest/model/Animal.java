@@ -1,8 +1,15 @@
 package com.singtel.devtest.model;
 
-public class Animal {
+import com.singtel.devtest.util.Walkable;
 
-    public void walk(){
+public class Animal implements Walkable {
+
+    @Override
+    public void walk() {
         System.out.println("I am walking");
+
     }
+
+
+
 }

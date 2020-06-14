@@ -30,4 +30,18 @@ public class BirdTest {
         String expected = "I am singing" + System.lineSeparator();
         Assert.isTrue(expected.equals(outContent.toString()), "Bird can't sing");
     }
+
+    @Test
+    public void flyTest() {
+        new Bird().fly();
+        String expected = "I am flying" + System.lineSeparator();
+        Assert.isTrue(expected.equals(outContent.toString()), "Bird can't fly");
+    }
+
+    @Test
+    public void walkTest() {
+        new Bird().walk();
+        String expected = "I am walking" + System.lineSeparator();
+        Assert.isTrue(expected.equals(outContent.toString()), "Bird can't walk");
+    }
 }

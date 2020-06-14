@@ -9,20 +9,7 @@ import org.springframework.util.Assert;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-public class BirdTest {
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final PrintStream originalOut = System.out;
-
-    @BeforeEach
-    public void setUpStreams() {
-        System.setOut(new PrintStream(outContent));
-    }
-
-    @AfterEach
-    public void restoreStreams() {
-        System.setOut(originalOut);
-    }
-
+public class BirdTest extends PrintLineTest {
 
     @Test
     public void singTest() {
@@ -31,12 +18,13 @@ public class BirdTest {
         Assert.isTrue(expected.equals(outContent.toString()), "Bird can't sing");
     }
 
-    @Test
+    //Now every Bird cannot fly
+    /*@Test
     public void flyTest() {
         new Bird().fly();
         String expected = "I am flying" + System.lineSeparator();
         Assert.isTrue(expected.equals(outContent.toString()), "Bird can't fly");
-    }
+    }*/
 
     @Test
     public void walkTest() {

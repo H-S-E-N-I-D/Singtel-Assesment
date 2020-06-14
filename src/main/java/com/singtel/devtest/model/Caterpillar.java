@@ -9,6 +9,7 @@ public class Caterpillar extends WalkableAnimal implements Flyable {
 
     public Caterpillar() {
         caterpillar = this;
+        this.setName("Caterpillar");
 
     }
 

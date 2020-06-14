@@ -31,10 +31,12 @@ public class Rooster extends Chicken {
 
     public Rooster(String language) {
         this.language = language;
+        this.setName("Rooster");
     }
 
     public Rooster() {
         this.language = "English";
+        this.setName("Rooster");
     }
 
     @Override

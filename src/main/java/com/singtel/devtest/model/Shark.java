@@ -6,6 +6,7 @@ public class Shark extends Fish implements FishEater {
 
     public Shark() {
         super(Size.LARGE, Color.GREY);
+        this.setName("Shark");
     }
 
     @Override

@@ -14,11 +14,12 @@ public class Fish extends SwimmableAnimal {
     public Fish(Size size, Color color) {
         this.size = size;
         this.color = color;
+        this.setName("Fish");
 
     }
 
-
     public Fish() {
+        this.setName("Fish");
     }
 
     public Size getSize() {

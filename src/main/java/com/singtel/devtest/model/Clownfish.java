@@ -6,6 +6,7 @@ public class Clownfish extends Fish implements JokeMaker {
 
     public Clownfish() {
         super(Size.SMALL, Color.ORANGE);
+        this.setName("Clownfish");
     }
 
     @Override

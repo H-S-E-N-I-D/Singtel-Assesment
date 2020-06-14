@@ -7,6 +7,7 @@ public class Parrot extends FlyableBird {
 
     public Parrot() {
         habitat = Habitat.DEFAULT;
+        this.setName("Parrot");
     }
 
     public Parrot(Habitat habitat) {
